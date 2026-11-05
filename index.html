@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bojabhumi Customer Feedback</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shape s1"></div><div class="shape s2"></div><div class="shape s3"></div>
+<div class="shape s4"></div><div class="shape s5"></div><div class="shape s6"></div>
+
+<main class="experience">
+  <section class="hero" aria-labelledby="page-title">
+    <div class="hero-orb hero-orb--yellow"></div>
+    <div class="hero-orb hero-orb--green"></div>
+    <p class="kicker">BOJABHUMI CUSTOMER FEEDBACK</p>
+    <h1 id="page-title">Kirimkan<br>pesanmu.</h1>
+    <p class="lead">Setiap cerita, kritik, dan saranmu berarti bagi kami.</p>
+  </section>
+
+  <form id="form" class="message-form" novalidate>
+    <div class="row">
+      <div class="field">
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" name="nama" type="text" autocomplete="name" placeholder="Contoh: Rina Maharani" aria-describedby="e-nama">
+        <p class="error" id="e-nama" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="wa">Nomor WhatsApp</label>
+        <input id="wa" name="wa" type="tel" inputmode="tel" autocomplete="tel" placeholder="Contoh: 0812 3456 7890" aria-describedby="e-wa">
+        <p class="error" id="e-wa" role="alert"></p>
+      </div>
+    </div>
+    <div class="field">
+      <label for="alamat">Alamat <small>(opsional)</small></label>
+      <input id="alamat" name="alamat" type="text" autocomplete="street-address" placeholder="Kota atau alamat lengkapmu">
+    </div>
+    <div class="field">
+      <label for="pesan">Pesan / Kritik / Saran</label>
+      <textarea id="pesan" name="pesan" maxlength="1000" placeholder="Ceritakan pengalamanmu di Bojabhumi: menu favorit, pelayanan, suasana, atau hal yang bisa kami perbaiki." aria-describedby="e-pesan"></textarea>
+      <p class="error" id="e-pesan" role="alert"></p>
+      <span class="count" id="count">0 / 1000</span>
+    </div>
+    <button type="submit">Kirim pesan <span aria-hidden="true">↗</span></button>
+    <p class="toast" id="toast" role="status"></p>
+  </form>
+  <p class="thanks">Terima kasih sudah menjadi bagian dari perjalanan Bojabhumi.</p>
+</main>
+
+<section class="success-screen" id="success-screen" aria-labelledby="success-title" aria-live="polite" hidden>
+  <div class="success-mark" aria-hidden="true">✓</div>
+  <p class="success-kicker">PESAN BERHASIL DISIAPKAN</p>
+  <h2 id="success-title">Terima kasih,<br>pelanggan setia bojabhumi</h2>
+  <img class="success-reward" src="https://i.pinimg.com/1200x/1f/60/2c/1f602ce63e61b511aae389fd88631e06.jpg" alt="Reward sebagai ucapan terima kasih dari Bojabhumi">
+  <p>Pesanmu sangat berarti untuk perjalanan Bojabhumi. Terima kasih sudah meluangkan waktu untuk berbagi cerita.</p>
+  
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
